@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="employee_webform_connected_sp.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+       <link href="Content/bootstrap.css" rel="stylesheet" />
+   <script src ="Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <div class="row">
+        <h1 style="text-align:center">Employee Management</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Abouts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 text-white" style="background-color:burlywood; min-height:1050px; padding:0px;">
+                <div class="list-group">
+                    <a href="#" class="list-group-item text-white" style="background-color:transparent">Favourites</a>
+                    <a href="#" class="list-group-item text-white" style="background-color:transparent">Products</a>
+                    <a href="#" class="list-group-item text-white" style="background-color:transparent">Your order</a>
+
+                </div>
+            </div>
+            <div class="col-10" style="min-height:1050px">
+             <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
